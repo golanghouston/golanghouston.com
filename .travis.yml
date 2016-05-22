@@ -1,10 +1,20 @@
 language: go
-install: go get -v github.com/spf13/hugo
+go:
+  - 1.6
+
+sudo: false
+
+install:
+  - go get github.com/spf13/hugo
+
 script:
   - hugo
-  - python --version
-  - sudo pip install s3cmd
-  - s3cmd sync --delete-removed -P -M -r public/ s3://golanghouston.com/
-notifications:
-    email:
-        on_failure: always
+
+deploy:
+  - provider: s3
+    access_key_id: <access_key_id>
+    secret_access_key: <secret_access_key>
+    bucket: <bucket>
+    region: eu-west-1
+    local_dir: public
+    skip_cleanup: true
