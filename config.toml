@@ -45,7 +45,7 @@ googleAnalytics = "UA-78170818-1"
 		portfolio = "Portfolio"
 		about = "About"
 		team = "Team"
-		contact = "Contact"
+		contact = "Chat"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
     # Use the weight attribute to order your custom links. Uncomment the example
@@ -90,29 +90,31 @@ googleAnalytics = "UA-78170818-1"
                 title = "Collaboration"
                 description = "We strive to hove collaboration within our community. From helping with community projects or just sanity checking when things go wrong."
 
-	# Portfolio section
-	[params.portfolio]
-        enable = true
-		# All projects defined in their own files. You can find example projects
-		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-		# at the root of this Hugo site.
-		# For more informtion take a look at the README.
-		title = "Portfolio"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-		[params.portfolio.modal]
-            client = "Client"
-            date = "Date"
-            category = "Category"
-            buttonText = "Close project"
+	# # Portfolio section
+	# [params.portfolio]
+  #       enable = false
+	# 	# All projects defined in their own files. You can find example projects
+	# 	# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+	# 	# at the root of this Hugo site.
+	# 	# For more informtion take a look at the README.
+	# 	title = "Portfolio"
+	# 	subtitle = "Lorem ipsum dolor sit amet consectetur."
+	#
+	# 	[params.portfolio.modal]
+  #           client = "Client"
+  #           date = "Date"
+  #           category = "Category"
+  #           buttonText = "Close project"
 
 
     # About section
 	[params.about]
         enable = true
 		title = "About"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		endpoint = "Be part<br>of our<br>story!"
+		subtitle = "Houston Gopher History"
+
+		content = "Golang Houston was started by several developers that started working with Go and could not put it down. After getting hooked they started to wonder if there were others in the area that were working with Go or were interested in learning it. With that in mind Golang Houston was started so that all gophers had a place in houston."
+
 
 		# # The events will be listed from the top to the bottom.
 		# # All images are stored under 'static/img/about'.
@@ -145,45 +147,39 @@ googleAnalytics = "UA-78170818-1"
 	# Team section
 	[params.team]
         enable = true
-		title = "Our amazing team"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		title = "Our growing team"
+		subtitle = "Bayou Gophers With Rockets"
 		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
 			img = "1.jpg"
-			name = "Kay Garland"
-			position = "Lead Designer"
+			name = "Michale Kacher"
+			position = "Co-Orginizer"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
+				["fa-twitter", "https://twitter.com/KacherMichael"],
 				["fa-linkedin", "#"]
 			]
 
 		[[params.team.members]]
 			img = "2.jpg"
-			name = "Larry Parker"
-			position = "Lead Marketer"
+			name = "James Pieper"
+			position = "Co-Orginizer"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
+				["fa-twitter", "https://twitter.com/Pieperz"]
 			]
 
 		[[params.team.members]]
 			img = "3.jpg"
-			name = "Diana Pertersen"
-			position = "Lead Developer"
+			name = "You"
+			position = "If you would like to help let us know."
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
 			]
 
 	# Client section
     [params.clients_list]
-        enable = true
+        enable = false
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
@@ -236,20 +232,20 @@ googleAnalytics = "UA-78170818-1"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
-			link = "#"
+			link = "https://twitter.com/golanghouston"
 
-		[[params.footer.social]]
-			icon = "fa-facebook"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-linkedin"
-			link = "#"
-
-		[[params.footer.quicklinks]]
-			text = "Privacy Policy"
-			link = "#"
+		# [[params.footer.social]]
+		# 	icon = "fa-facebook"
+		# 	link = "#"
+		#
+		# [[params.footer.social]]
+		# 	icon = "fa-linkedin"
+		# 	link = "#"
 
 		[[params.footer.quicklinks]]
-			text = "Terms of Use"
+			text = "Community Policy"
 			link = "#"
+
+		# [[params.footer.quicklinks]]
+		# 	text = "Terms of Use"
+		# 	link = "#"
