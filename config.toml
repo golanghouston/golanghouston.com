@@ -163,7 +163,7 @@ googleAnalytics = "UA-78170818-1"
 			]
 
 		[[params.team.members]]
-			img = "2.jpg"
+			img = "jamespieper.png"
 			name = "James Pieper"
 			position = "Co-Orginizer"
 			social = [
